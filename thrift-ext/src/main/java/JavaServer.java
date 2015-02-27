@@ -44,14 +44,15 @@ public class JavaServer {
                     simple(processor);
                 }
             };
-            Runnable secure = new Runnable() {
-                public void run() {
-                    secure(processor);
-                }
-            };
-
             new Thread(simple).start();
-            new Thread(secure).start();
+
+            // Runnable secure = new Runnable() {
+            // public void run() {
+            // secure(processor);
+            // }
+            // };
+            //
+            // new Thread(secure).start();
         } catch (Exception x) {
             x.printStackTrace();
         }

@@ -35,6 +35,8 @@ import tutorial.Work;
 public class JavaClient {
     public static void main(String[] args) {
 
+        args = new String[] { "simple" };
+
         if (args.length != 1) {
             System.out.println("Please enter 'simple' or 'secure'");
             System.exit(0);
